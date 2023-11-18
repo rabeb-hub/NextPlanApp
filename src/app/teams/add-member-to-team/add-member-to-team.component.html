@@ -1,0 +1,10 @@
+<h2>Ajouter un nouveau membre à l'équipe</h2>
+<form (submit)="addMemberToTeam()">
+  <label>Nom du membre: </label>
+  <input type="text" [(ngModel)]="newMember.name" name="name" required><br><br>
+
+  <label>Rôle du membre: </label>
+  <input type="text" [(ngModel)]="newMember.role" name="role" required><br><br>
+
+  <button class="btn btn-primary" type="submit">Ajouter</button>
+</form>

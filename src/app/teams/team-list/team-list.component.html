@@ -1,0 +1,42 @@
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Nom de l'équipe</th>
+      <th>Détails des membres</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let team of teams">
+      <td>
+        {{ team.name }}
+        <br>
+        <button class="btn btn-danger" (click)="deleteTeam(team.id)">Supprimer l'équipe</button>
+      </td>
+      <td>
+        <ul class="list-unstyled">
+          <li *ngFor="let member of team.members">
+            <div class="card mb-3">
+              <div class="card-body">
+                <p>Nom du membre : {{ member.name }}</p>
+                <p>Rôle du membre : {{ member.role }}</p>
+                <button class="btn btn-danger" (click)="deleteMemberFromTeam(team.id, member.id)">Supprimer</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-primary" (click)="showAddMemberForm(team.id)">Ajouter un membre</button>
+        <app-add-member-to-team
+          *ngIf="selectedTeamId === team.id"
+          [teamId]="team.id"
+          (memberAdded)="refreshTeamsList()"
+        ></app-add-member-to-team>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="mb-3">
+  <button class="btn btn-primary" routerLink="/AddTeams">Ajouter une équipe</button>
+</div>

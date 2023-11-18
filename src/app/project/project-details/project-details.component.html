@@ -1,0 +1,50 @@
+<div class="container">
+    <h2>Dashboard du Projet : {{ projectDetails.name }}</h2>
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="card">
+                <div class="card-header">
+                    Détails du Projet
+                </div>
+                <div class="card-body">
+                    <p>Description : {{ projectDetails.description }}</p>
+                    <p>Équipe associée : {{ projectDetails.teamId }}</p>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-header">
+                    Graphiques du Projet
+                </div>
+                <div class="card-body">
+                    <div style="display: block;">
+                        <canvas baseChart
+                                [datasets]="taskData"
+                                [labels]="taskLabels"
+                                *ngIf="projectDetails && projectDetails.tasks">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Liste des Tâches du Projet
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let task of projectDetails?.tasks">
+                            <p>{{ task.title }}</p>
+                            <p>Status : {{ task.status }}</p>
+                            <p>Due Date : {{ task.dueDate }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,37 @@
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Rechercher un projet" [(ngModel)]="searchProject" (input)="filterProjects()">
+  <button type="button" class="btn btn-primary" (click)="goToAddProject()">Ajouter un projet</button>
+</div>
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nom du Projet</th>
+    <th>Description</th>
+    <th>Équipe ID</th>
+    <th>État du Projet</th>
+    <th>Date Limite</th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let project of filteredProjects">
+    <td >{{ project.id }}</td>
+    <td (click)="navigateToProjectDetails(project.id)" >{{ project.name }}</td>
+    <td>{{ project.description }}</td>
+    <td>{{ project.teamId }}</td>
+    <td>{{ getProjectStatus(project.id) }}</td>
+    <td>{{ getLatestTaskDate(project.tasks) | date: 'yyyy-MM-dd' }}</td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="deleteProject(project.id)">Effacer</button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-primary" (click)="goToUpdateProject(project)">Modifier</button>
+    </td>
+
+  </tr>
+  </tbody>
+</table>

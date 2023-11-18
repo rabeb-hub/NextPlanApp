@@ -1,0 +1,15 @@
+<div class="container">
+  <form #teamForm="ngForm" (ngSubmit)="addTeam(teamForm)">
+    <div class="form-group">
+      <label for="teamName">Team Name:</label>
+      <input type="text" name="teamName" class="form-control"
+             [(ngModel)]="newTeam.name" required minlength="3" #teamName="ngModel">
+      <div class="alert alert-danger" *ngIf="teamName.invalid && teamName.touched">
+        <div *ngIf="teamName.errors?.['required']">Team Name is required.</div>
+        <div *ngIf="teamName.errors?.['minlength']">Team Name must be at least 3 characters.</div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit" [disabled]="teamForm.invalid">Add Team</button>
+  </form>
+</div>

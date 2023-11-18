@@ -1,0 +1,441 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "Team A",
+      "members": [
+        {
+          "id": 101,
+          "name": "John Doe",
+          "role": "Developer"
+        },
+        {
+          "id": 102,
+          "name": "Jane Smith",
+          "role": "Designer"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Team B",
+      "members": [
+        {
+          "id": 201,
+          "name": "Alex Johnson",
+          "role": "Project Manager"
+        },
+        {
+          "id": 202,
+          "name": "Emily Brown",
+          "role": "Tester"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Team C",
+      "members": [
+        {
+          "id": 301,
+          "name": "Mike Wilson",
+          "role": "Developer"
+        },
+        {
+          "id": 302,
+          "name": "Sophie Green",
+          "role": "Designer"
+        },
+        {
+          "name": "rabeb",
+          "role": "dev"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "team'S",
+      "members": [
+        {
+          "name": "rabeb",
+          "role": "dev"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ccc",
+      "members": [
+        {
+          "name": "aaa",
+          "role": "aaa"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1001,
+      "title": "Task 1",
+      "description": "Description for Task 1",
+      "status": "Done",
+      "dueDate": "2023-12-15"
+    },
+    {
+      "id": 1002,
+      "title": "Task 2",
+      "description": "Description for Task 2",
+      "status": "Done",
+      "dueDate": "2024-01-10"
+    },
+    {
+      "id": 2001,
+      "projectId": 2,
+      "title": "Task A",
+      "description": "Description for Task A",
+      "status": "Done",
+      "assignedTo": 201,
+      "dueDate": "2023-07-15"
+    },
+    {
+      "id": 2002,
+      "projectId": 2,
+      "title": "Task B",
+      "description": "Description for Task B",
+      "status": "In Progress",
+      "assignedTo": 202,
+      "dueDate": "2023-12-17"
+    },
+    {
+      "id": 3001,
+      "title": "Task C",
+      "description": "Description for Task C",
+      "status": "Done",
+      "dueDate": "2023-09-06"
+    },
+    {
+      "id": 3002,
+      "title": "Task D",
+      "description": "Description for Task D",
+      "status": "Done",
+      "dueDate": "2023-09-09"
+    },
+    {
+      "id": 4001,
+      "title": "Task X",
+      "description": "Description for Task X",
+      "status": "To Do",
+      "dueDate": "2024-05-15"
+    },
+    {
+      "id": 4002,
+      "title": "Task Y",
+      "description": "Description for Task Y",
+      "status": "To Do",
+      "dueDate": "2024-06-16"
+    },
+    {
+      "id": 4003,
+      "title": "aa",
+      "description": "aa",
+      "status": "To do",
+      "dueDate": "2023-12-10"
+    },
+    {
+      "id": 4004,
+      "title": "aa",
+      "description": "aa",
+      "status": "To do",
+      "dueDate": "2023-12-10"
+    },
+    {
+      "id": 4005,
+      "title": "aa",
+      "description": "aa",
+      "status": "To do",
+      "dueDate": "2023-12-10"
+    },
+    {
+      "id": 4006,
+      "title": "bb",
+      "description": "bb",
+      "status": "To do",
+      "dueDate": "2023-12-09"
+    },
+    {
+      "id": 4007,
+      "title": "xx",
+      "description": "xx",
+      "status": "To do",
+      "dueDate": "2023-12-08"
+    },
+    {
+      "id": 4008,
+      "title": "ww",
+      "description": "ww",
+      "status": "To do",
+      "dueDate": "2023-12-24"
+    },
+    {
+      "id": 4009,
+      "title": "nn",
+      "description": "nn",
+      "status": "To do",
+      "dueDate": "2023-12-07"
+    },
+    {
+      "id": 4010,
+      "title": "task 1",
+      "description": "",
+      "status": "To do",
+      "dueDate": "2023-12-31"
+    },
+    {
+      "id": 4011,
+      "title": "task 5",
+      "description": "",
+      "status": "To do",
+      "dueDate": "2024-01-03"
+    },
+    {
+      "id": 4012,
+      "title": "task 2",
+      "description": "",
+      "status": "To do",
+      "dueDate": "2024-01-07"
+    },
+    {
+      "id": 4013,
+      "title": "task 3",
+      "description": "",
+      "status": "To do",
+      "dueDate": "2024-01-11"
+    },
+    {
+      "id": 4014,
+      "title": "task 4",
+      "description": "",
+      "status": "To do",
+      "dueDate": "2024-01-05"
+    },
+    {
+      "id": 4015,
+      "title": "task 1",
+      "description": "des task1 ",
+      "status": "To do",
+      "dueDate": "2023-12-30"
+    },
+    {
+      "id": 4016,
+      "title": "task 1",
+      "description": "desc task1",
+      "status": "To do",
+      "dueDate": "2024-01-05"
+    },
+    {
+      "id": 4017,
+      "title": "task 2",
+      "description": "desc task 2",
+      "status": "To do",
+      "dueDate": "2024-01-07"
+    },
+    {
+      "id": 4018,
+      "title": "task 1",
+      "description": "desc task 1",
+      "status": "To do",
+      "dueDate": "2024-01-05"
+    },
+    {
+      "id": 4019,
+      "title": "task 1",
+      "description": "",
+      "status": "To do",
+      "dueDate": ""
+    },
+    {
+      "id": 4020,
+      "title": "c",
+      "description": "",
+      "status": "To do",
+      "dueDate": ""
+    },
+    {
+      "id": 4021,
+      "title": "x",
+      "description": "",
+      "status": "To do",
+      "dueDate": ""
+    },
+    {
+      "id": 4022,
+      "title": "task 1",
+      "description": "desc",
+      "status": "To do",
+      "dueDate": "2024-01-05"
+    },
+    {
+      "id": 4023,
+      "title": "xx",
+      "description": "",
+      "status": "To do",
+      "dueDate": "2023-12-21"
+    },
+    {
+      "id": 4024,
+      "title": "ss",
+      "description": "sss",
+      "status": "To do",
+      "dueDate": "2023-12-30"
+    }
+  ],
+  "projects": [
+    {
+      "id": 2,
+      "name": "Project Y",
+      "description": "Description for Project Y",
+      "teamId": 2,
+      "tasks": [
+        {
+          "id": 2001,
+          "title": "Task A",
+          "description": "Description for Task A",
+          "status": "Done",
+          "dueDate": "2023-07-15"
+        },
+        {
+          "id": 2002,
+          "title": "Task B",
+          "description": "Description for Task B",
+          "status": "In Progress",
+          "dueDate": "2023-12-17"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Project W",
+      "description": "Description for Project W",
+      "teamId": 3,
+      "tasks": [
+        {
+          "id": 4001,
+          "title": "Task X",
+          "description": "Description for Task X",
+          "status": "To Do",
+          "dueDate": "2024-05-15"
+        },
+        {
+          "id": 4002,
+          "title": "Task Y",
+          "description": "Description for Task Y",
+          "status": "To Do",
+          "dueDate": "2024-06-16"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "project angular",
+      "description": "project angular",
+      "teamId": "3",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "task 1",
+          "description": "",
+          "status": "In Progress",
+          "dueDate": "2023-12-31"
+        },
+        {
+          "id": 0,
+          "title": "task 2",
+          "description": "",
+          "status": "In Progress",
+          "dueDate": "2024-01-07"
+        },
+        {
+          "id": 0,
+          "title": "task 3",
+          "description": "",
+          "status": "Done",
+          "dueDate": "2024-01-11"
+        },
+        {
+          "id": 0,
+          "title": "task 4",
+          "description": "",
+          "status": "Done",
+          "dueDate": "2024-01-05"
+        },
+        {
+          "id": 0,
+          "title": "task 5",
+          "description": "",
+          "status": "To Do",
+          "dueDate": "2024-01-03"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "project B",
+      "description": "desc project B",
+      "teamId": "1",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "task 1",
+          "description": "desc task 1",
+          "status": "Done",
+          "dueDate": "2024-01-05"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "cc",
+      "description": "des",
+      "teamId": "1",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "task 1",
+          "description": "desc",
+          "status": "To do",
+          "dueDate": "2024-01-05"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "xx",
+      "description": "",
+      "teamId": "2",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "xx",
+          "description": "",
+          "status": "In Progress",
+          "dueDate": "2023-12-21"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "aaaa",
+      "description": "ccc",
+      "teamId": "4",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "ss",
+          "description": "sss",
+          "status": "Done",
+          "dueDate": "2023-12-30"
+        }
+      ]
+    }
+  ]
+}
