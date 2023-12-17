@@ -20,7 +20,8 @@
   <tbody>
   <tr *ngFor="let project of filteredProjects">
     <td >{{ project.id }}</td>
-    <td (click)="navigateToProjectDetails(project.id)" >{{ project.name }}</td>
+    <td >
+      <a class="fw-bolder link-underline-light text-black" (click)="navigateToProjectDetails(project.id)">{{ project.name }} </a></td>
     <td>{{ project.description }}</td>
     <td>{{ project.teamId }}</td>
     <td>{{ getProjectStatus(project.id) }}</td>

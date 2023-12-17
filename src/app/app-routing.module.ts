@@ -5,11 +5,10 @@ import {TeamsModule} from "./teams/teams.module";
 
 
 const routes: Routes = [
-  { path: 'team', loadChildren: () => import('./teams/teams.module').then(m => m.TeamsModule) },
-  { path: 'project', loadChildren: () => import('./project/project.module').then(m => m.ProjectModule) },
-  { path: '', redirectTo: '/Project', pathMatch: 'full' },
-  { path: '**', redirectTo: '/Project' },
-
+  { path: 'teams', loadChildren: () => import('./teams/teams.module').then(m => m.TeamsModule) },
+  { path: 'projects', loadChildren: () => import('./project/project.module').then(m => m.ProjectModule) },
+  { path: '', redirectTo: '/projects', pathMatch: 'full' },
+  { path: '**', redirectTo: '/psroject' },
 ];
 
 @NgModule({

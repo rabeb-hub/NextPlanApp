@@ -12,7 +12,6 @@ import {Team} from "../../shared/models/team";
 export class TeamListComponent  implements OnInit{
     teams: Team[] = [];
     selectedTeamId: number | null = null;
-    teamToUpdate!: Team;
     constructor(private teamService: TeamService) {}
 
     ngOnInit(): void {
@@ -36,7 +35,6 @@ export class TeamListComponent  implements OnInit{
     this.teamService.deleteTeam(teamId).subscribe(
       (result) => {
         console.log('team supprimé de l\'équipe');
-        this.fetchTeams(); // Rafraîchir la liste des équipes après la suppression
       },
       (error) => {
         console.error('Erreur lors de la suppression du membre :', error);
